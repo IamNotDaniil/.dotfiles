@@ -1,0 +1,24 @@
+[user]
+    name = Your Name
+    email = your.email@example.com
+
+[core]
+    editor = nvim
+    excludesfile = ~/.gitignore_global
+    autocrlf = input
+    quotepath = false
+
+[alias]
+    s = status -s
+    st = status
+    a = add
+    aa = add --all
+    c = commit -m
+    pl = pull --rebase
+    lg = log --graph --oneline --all
+
+[init]
+    defaultBranch = main
+
+[pull]
+    rebase = true
