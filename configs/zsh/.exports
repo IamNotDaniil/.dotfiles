@@ -1,0 +1,10 @@
+export EDITOR="nvim"
+export VISUAL="nvim"
+export PAGER="less"
+export PATH="$HOME/.local/bin:$HOME/go/bin:$PATH"
+export GOPATH="$HOME/go"
+export PYTHONDONTWRITEBYTECODE=1
+export HISTFILE="$HOME/.zsh_history"
+export HISTSIZE=10000
+export SAVEHIST=10000
+export LANG="en_US.UTF-8"

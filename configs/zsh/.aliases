@@ -1,0 +1,16 @@
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias ll='ls -lah'
+alias lt='ls -latr'
+alias gs='git status'
+alias ga='git add'
+alias gc='git commit -m'
+alias gp='git push'
+alias gl='git pull'
+alias v='nvim'
+alias vim='nvim'
+alias vi='nvim'
+
+mkcd() { mkdir -p "$1" && cd "$1"; }
+backup() { cp "$1" "$1.bak"; }

@@ -1,0 +1,16 @@
+name: CI
+on: [push, pull_request]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check Neovim config syntax
+        run: nvim --headless -c 'luafile configs/nvim/init.lua' -c 'qa'
+      - name: Check Tmux config
+        run: tmux -f configs/tmux/tmux.conf list-commands
+      - name: Check ZSH syntax
+        run: zsh -n configs/zsh/.zshrc
+      - name: Check Git config
+        run: git config --file configs/git/.gitconfig --list
